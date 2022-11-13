@@ -1,21 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    style="@style/ListItemStyle"
+    android:layout_marginBottom="@dimen/task_list_margin_bottom">
 
-    <TextView
-        android:id="@+id/task_item_name"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        tools:srcCompat="@drawable/ic_house"
+        android:padding="@dimen/task_item_padding" />
 
-    <TextView
-        android:id="@+id/task_item_date"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/task_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:textAlignment="center"
+            android:textSize="@dimen/task_name_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text_color"
+            style="@style/TextViewStyle"/>
+
+        <TextView
+            android:id="@+id/task_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/task_date_font_size"
+            android:textColor="@color/primary_text_color"
+            style="@style/TextViewStyle"/>
+
+        <CheckBox
+            android:id="@+id/doneCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done_label"
+            android:textColor="@color/primary_text_color"
+            style="@style/CheckboxStyle"/>
+
+    </LinearLayout>
+
 </LinearLayout>

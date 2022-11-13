@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextViewStyle">
+        <item name="strokeColor">@color/white</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="SpinnerStyle">
+        <item name="android:popupBackground">@color/secondary_bg_color</item>
+    </style>
+    <style name="CheckboxStyle" parent="Theme.AppCompat.Light">
+        <item name="buttonTint">@color/primary_text_color</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="ListItemStyle">
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+</resources>

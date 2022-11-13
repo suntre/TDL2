@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">To Do List</string>
     <string name="name_label">Nazwa</string>
-    <string name="name_hint">Wpsiz nazwę zadania</string>
+    <string name="name_hint">Wpisz nazwę zadania</string>
     <string name="details_label">Szczegóły</string>
     <string name="done_label">Wykonane</string>
-
+    <string name="task_add_new">Nowe zadanie</string>
+    <string name="show_subtitle">Pokaż podtytuł</string>
+    <string name="hide_subtitle">Ukryj podtytuł</string>
+    <string name="subtitle_format">%1$d zadań</string>
+    <string name="category_studies">Studia</string>
+    <string name="category_home">Dom</string>
 </resources>
